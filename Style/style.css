@@ -1,10 +1,31 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .container {
     background-color: #f4f4f4;
     padding: 20px;
-    margin: 20px;
+    margin: 0 auto;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    animation: changeColor 5s infinite;
 }
+  
+  @keyframes changeColor {
+    0% {
+      background-color: #130101;
+    }
+    50% {
+      background-color: #ccc;
+    }
+    100% {
+      background-color: #d90f0f;
+    }
+  }
   
 label {
     font-size: 24px;
@@ -22,4 +43,17 @@ input {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
   
+button {
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+}
+  
+button:hover {
+    background-color: #555;
+}
   
